@@ -68,15 +68,6 @@ main {
     text-align: center;
 }
 
-.eyebrow {
-    text-transform: uppercase;
-    letter-spacing: 0.2em;
-    color: var(--accent);
-    font-size: 0.8rem;
-    font-weight: 700;
-    margin-bottom: 0.5rem;
-}
-
 .hero h1 {
     font-size: clamp(2rem, 4vw, 3rem);
     margin: 0 0 1rem;
