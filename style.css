@@ -128,13 +128,19 @@ article h3,
 }
 
 .contact-link {
+    display: inline-block;
+    margin-top: 0.5rem;
     color: var(--accent-dark);
-    font-weight: 600;
+    font-weight: 700;
     text-decoration: none;
+    letter-spacing: 0.02em;
+    transition: transform 0.2s ease, color 0.2s ease;
 }
 
 .contact-link:hover {
-    text-decoration: underline;
+    color: var(--accent);
+    transform: translateY(-1px);
+    text-decoration: none;
 }
 
 footer {
