@@ -128,17 +128,12 @@ article h3,
 }
 
 .contact-link {
-    display: inline-block;
-    margin-top: 0.75rem;
-    padding: 0.8rem 1.1rem;
-    background: var(--accent);
-    color: white;
-    font-weight: 700;
+    display: inline;
+    color: var(--accent-dark);
+    font-weight: 600;
     text-decoration: none;
-    letter-spacing: 0.02em;
-    border-radius: 999px;
-    box-shadow: 0 6px 16px rgba(15, 118, 110, 0.2);
-    width: fit-content;
+    border-bottom: 1px solid var(--accent-dark);
+    padding-bottom: 1px;
 }
 
 footer {
