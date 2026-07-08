@@ -73,7 +73,8 @@ Failure symptoms:</pre>
 
     <script>
         function copyRepairTemplate() {
-            const text = document.getElementById('repair-template').value;
+            const template = document.getElementById('repair-template');
+            const text = template.textContent;
             navigator.clipboard.writeText(text).then(function () {
                 const button = document.querySelector('.copy-button');
                 const originalText = button.textContent;
