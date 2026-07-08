@@ -151,14 +151,14 @@ article h3,
 }
 
 #repair-template {
-    width: 100%;
-    min-height: 140px;
+    margin: 0;
     padding: 0.8rem;
     border: 1px solid var(--border);
     border-radius: 8px;
-    font: inherit;
-    resize: vertical;
     background: white;
+    font: inherit;
+    white-space: pre-wrap;
+    overflow: hidden;
 }
 
 .copy-button {
