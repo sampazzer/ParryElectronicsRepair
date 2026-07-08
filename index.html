@@ -54,12 +54,37 @@
         <section id="contact" class="section contact-card">
             <h2>Get in Touch</h2>
             <p>Email <a href="mailto:hello@parryelectronicsrepair.co.uk" class="contact-link">hello@parryelectronicsrepair.co.uk</a> with your repair query.</p>
-            <p>Include your name, a contact number if you do not mind being contacted by phone, the item for repair, its model number if applicable, and its failure symptoms.</p>
+            <div class="copy-box">
+                <p class="copy-label">Copy this into your email:</p>
+                <textarea id="repair-template" readonly>Hi Sam,
+
+My name is [Your Name].
+Contact number (optional): 
+Item for repair: 
+Model number: 
+Failure symptoms: 
+</textarea>
+                <button class="copy-button" onclick="copyRepairTemplate()">Copy to clipboard</button>
+            </div>
         </section>
     </main>
 
     <footer>
         <p>&copy; 2026 Parry Electronics Repair. Repair enquiries welcomed.</p>
     </footer>
+
+    <script>
+        function copyRepairTemplate() {
+            const text = document.getElementById('repair-template').value;
+            navigator.clipboard.writeText(text).then(function () {
+                const button = document.querySelector('.copy-button');
+                const originalText = button.textContent;
+                button.textContent = 'Copied!';
+                setTimeout(function () {
+                    button.textContent = originalText;
+                }, 1500);
+            });
+        }
+    </script>
 </body>
 </html>
