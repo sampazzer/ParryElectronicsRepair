@@ -74,9 +74,10 @@ nav {
 
 .brand-text {
     font-weight: 800;
-    font-size: 1.05rem;
-    letter-spacing: 0.04em;
+    font-size: 1.08rem;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
+    line-height: 1.1;
 }
 
 .brand:hover,
