@@ -221,8 +221,8 @@ article h3 {
     color: var(--accent);
 }
 
-.about p,
-.contact-card p {
+.about > p,
+.contact-card > p {
     color: var(--muted);
     margin: 0;
 }
@@ -249,8 +249,8 @@ article h3 {
     border-left: 4px solid var(--accent);
 }
 
-.copy-label {
-    margin: 0 0 0.8rem;
+.copy-box .copy-label {
+    margin: 0 0 0.9rem;
     font-weight: 600;
     color: var(--text);
     line-height: 1.3;
