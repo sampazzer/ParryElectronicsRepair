@@ -59,6 +59,12 @@ nav {
     text-transform: uppercase;
 }
 
+.brand:hover,
+.brand:focus-visible {
+    color: var(--accent-dark);
+    border-color: transparent;
+}
+
 nav ul {
     display: flex;
     align-items: center;
@@ -68,7 +74,7 @@ nav ul {
     padding: 0;
 }
 
-nav a {
+nav ul a {
     color: var(--text);
     text-decoration: none;
     padding: 0.35rem 0;
@@ -84,8 +90,8 @@ nav a {
     transition: color 0.2s ease, border-color 0.2s ease;
 }
 
-nav a:hover,
-nav a:focus-visible {
+nav ul a:hover,
+nav ul a:focus-visible {
     color: var(--accent-dark);
     border-color: var(--accent);
 }
