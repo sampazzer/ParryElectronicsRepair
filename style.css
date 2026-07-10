@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap");
+
 :root {
     /* Brand palette */
     --bg: #f4f7fb;
@@ -10,6 +12,15 @@
     --accent-secondary: #2563eb;
     --border: #e2e8f0;
     --shadow: rgba(15, 23, 42, 0.08);
+
+    /* Brand typography */
+    --font-body: "Inter", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --font-heading: "Space Grotesk", "Inter", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --font-size-body: 1rem;
+    --font-size-body-large: 1.05rem;
+    --font-size-heading-xl: clamp(2rem, 4vw, 3rem);
+    --font-size-heading-lg: clamp(1.45rem, 2.2vw, 1.8rem);
+    --font-size-heading-md: 1.15rem;
 }
 
 * {
@@ -18,8 +29,9 @@
 }
 
 body {
-    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
-    line-height: 1.6;
+    font-family: var(--font-body);
+    font-size: var(--font-size-body);
+    line-height: 1.75;
     color: var(--text);
     margin: 0;
     background: linear-gradient(180deg, var(--surface-alt) 0%, var(--bg) 100%);
@@ -70,14 +82,16 @@ nav {
     border-radius: 0.75rem;
     background: linear-gradient(135deg, var(--accent), var(--accent-secondary));
     color: white;
+    font-family: var(--font-heading);
     font-size: 0.85rem;
-    font-weight: 800;
+    font-weight: 700;
     letter-spacing: 0.08em;
     box-shadow: 0 8px 18px rgba(15, 118, 110, 0.2);
 }
 
 .brand-text {
-    font-weight: 800;
+    font-family: var(--font-heading);
+    font-weight: 700;
     font-size: 1.08rem;
     letter-spacing: 0.08em;
     text-transform: uppercase;
@@ -101,14 +115,14 @@ nav ul {
 nav ul a {
     color: var(--text);
     text-decoration: none;
-    padding: 0.35rem 0;
+    padding: 0.4rem 0.1rem;
     display: inline-flex;
     align-items: center;
     min-height: 2rem;
     line-height: 1;
-    font-size: 0.9rem;
+    font-size: 0.82rem;
     font-weight: 700;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.14em;
     text-transform: uppercase;
     border-bottom: 2px solid transparent;
     transition: color 0.2s ease, border-color 0.2s ease;
@@ -128,7 +142,7 @@ main {
 
 .hero {
     margin-top: 0.5rem;
-    padding: 2.75rem 1.25rem;
+    padding: 3rem 1.5rem;
     text-align: left;
     background: linear-gradient(135deg, rgba(15, 118, 110, 0.08), rgba(37, 99, 235, 0.06));
     border: 1px solid var(--border);
@@ -142,16 +156,19 @@ main {
 }
 
 .hero h1 {
-    font-size: clamp(2rem, 4vw, 3rem);
+    font-family: var(--font-heading);
+    font-size: var(--font-size-heading-xl);
     margin: 0 0 0.75rem;
     color: var(--accent-dark);
     line-height: 1.15;
+    letter-spacing: -0.02em;
 }
 
 .hero p {
     margin: 0 auto;
     color: var(--muted);
-    font-size: 1.05rem;
+    font-size: var(--font-size-body-large);
+    line-height: 1.8;
 }
 
 .section {
@@ -159,11 +176,14 @@ main {
 }
 
 .section h2 {
+    font-family: var(--font-heading);
+    font-size: var(--font-size-heading-lg);
     margin: 0 0 0.5rem;
     color: var(--accent-dark);
     position: relative;
     display: inline-block;
     padding-bottom: 0.25rem;
+    letter-spacing: -0.02em;
 }
 
 .section h2::after {
@@ -180,6 +200,8 @@ main {
 .section > p {
     margin: 0 0 1rem;
     color: var(--muted);
+    font-size: var(--font-size-body-large);
+    line-height: 1.7;
 }
 
 .grid {
@@ -206,7 +228,10 @@ article h3,
 }
 
 article h3 {
+    font-family: var(--font-heading);
+    font-size: var(--font-size-heading-md);
     color: var(--accent-dark);
+    letter-spacing: -0.01em;
 }
 
 .service-list {
@@ -251,6 +276,8 @@ article h3 {
 
 .copy-box .copy-label {
     margin: 0 0 0.9rem;
+    font-family: var(--font-heading);
+    font-size: 0.95rem;
     font-weight: 600;
     color: var(--text);
     line-height: 1.3;
@@ -274,7 +301,10 @@ article h3 {
     border-radius: 999px;
     background: var(--accent);
     color: white;
+    font-family: var(--font-heading);
+    font-size: 0.95rem;
     font-weight: 600;
+    letter-spacing: 0.01em;
     cursor: pointer;
     transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
     box-shadow: 0 8px 20px rgba(15, 118, 110, 0.18);
@@ -298,6 +328,7 @@ footer {
     text-align: center;
     color: var(--muted);
     border-top: 1px solid var(--border);
+    letter-spacing: 0.01em;
 }
 
 @media (max-width: 640px) {

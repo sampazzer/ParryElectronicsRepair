@@ -18,3 +18,8 @@ Use these values for the Parry Electronics Repair site.
 - Use the teal for primary actions, buttons, and emphasis.
 - Use the blue for links and secondary highlights.
 - Use the light gray tones for page background and card surfaces.
+
+## Typography
+- Body text: Inter, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif
+- Headings and display text: Space Grotesk, Inter, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif
+- Use the heading font for the brand, section titles, and call-to-action elements to keep the site feeling polished and technical.
