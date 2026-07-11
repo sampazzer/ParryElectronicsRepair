@@ -36,6 +36,10 @@ section {
     scroll-margin-top: calc(var(--header-offset) + 0.35rem);
 }
 
+body:has(:target) {
+    scroll-padding-top: var(--header-offset);
+}
+
 body {
     font-family: var(--font-body);
     font-size: var(--font-size-body);
@@ -174,6 +178,7 @@ main {
     max-width: 960px;
     margin: 0 auto;
     padding: 1.25rem 1.25rem 2rem;
+    scroll-margin-top: calc(var(--header-offset) + 1.25rem);
 }
 
 .hero {
