@@ -12,6 +12,7 @@
     --accent-secondary: #2563eb;
     --border: #e2e8f0;
     --shadow: rgba(15, 23, 42, 0.08);
+    --header-offset: 5.25rem;
 
     /* Brand typography */
     --font-body: "Inter", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -28,7 +29,11 @@
 }
 
 html {
-    scroll-padding-top: 6rem;
+    scroll-padding-top: var(--header-offset);
+}
+
+section {
+    scroll-margin-top: calc(var(--header-offset) + 0.35rem);
 }
 
 body {
@@ -63,6 +68,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     min-height: 3.5rem;
+    gap: 1rem;
 }
 
 .brand-wrap {
@@ -162,6 +168,35 @@ nav ul a:focus-visible {
     border-color: rgba(15, 118, 110, 0.18);
     box-shadow: 0 4px 12px rgba(15, 23, 42, 0.04);
     transform: translateY(-1px);
+}
+
+@media (max-width: 720px) {
+    :root {
+        --header-offset: 7.25rem;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        padding: 0.9rem 1rem 1rem;
+    }
+
+    nav ul {
+        width: 100%;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 0.35rem;
+    }
+}
+
+@media (max-width: 480px) {
+    :root {
+        --header-offset: 8.5rem;
+    }
+
+    nav ul a {
+        padding: 0.55rem 0.7rem;
+        font-size: 0.72rem;
+    }
 }
 
 main {
