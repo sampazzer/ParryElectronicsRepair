@@ -70,7 +70,7 @@ nav {
 
 .brand {
     display: inline-flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 0.8rem;
     color: var(--accent-dark);
     text-decoration: none;
@@ -78,6 +78,9 @@ nav {
 
 .brand-text {
     color: var(--accent-dark);
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
 }
 
 .tagline {
@@ -88,6 +91,7 @@ nav {
     text-transform: uppercase;
     line-height: 1;
     white-space: nowrap;
+    margin: 0;
 }
 
 .brand-mark {
