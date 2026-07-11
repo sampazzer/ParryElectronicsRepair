@@ -172,7 +172,7 @@ nav ul a:focus-visible {
 
 @media (max-width: 720px) {
     :root {
-        --header-offset: 5.2rem;
+        --header-offset: 4rem;
     }
 
     nav {
