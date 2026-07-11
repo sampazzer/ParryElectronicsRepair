@@ -1,6 +1,6 @@
 # Brand Colour Palette
 
-Use these values for the Parry Electronics Repair site.
+Use these values for the Parry Repair site.
 
 - Background: #f4f7fb
 - Surface: #ffffff
