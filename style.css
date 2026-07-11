@@ -65,7 +65,6 @@ nav {
 .brand-wrap {
     display: flex;
     align-items: center;
-    gap: 0.9rem;
 }
 
 .brand {
@@ -77,14 +76,25 @@ nav {
 }
 
 .brand-text {
-    color: var(--accent-dark);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 0.2rem;
+    color: var(--accent-dark);
+}
+
+.brand-name {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 1.2rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    line-height: 1.05;
+    color: inherit;
 }
 
 .tagline {
+    margin: 0;
     color: var(--muted);
     font-size: 0.74rem;
     font-weight: 600;
@@ -92,8 +102,6 @@ nav {
     text-transform: uppercase;
     line-height: 1;
     white-space: nowrap;
-    margin: 0;
-    align-self: flex-start;
 }
 
 .brand-mark {
@@ -110,15 +118,6 @@ nav {
     letter-spacing: 0.08em;
     box-shadow: 0 8px 18px rgba(15, 118, 110, 0.2);
     flex-shrink: 0;
-}
-
-.brand-text {
-    font-family: var(--font-heading);
-    font-weight: 700;
-    font-size: 1.2rem;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    line-height: 1.05;
 }
 
 .brand:hover,
