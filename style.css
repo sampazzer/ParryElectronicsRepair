@@ -263,6 +263,7 @@ article,
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+    background: linear-gradient(135deg, rgba(15, 118, 110, 0.08), rgba(37, 99, 235, 0.06));
 }
 
 article h3,
