@@ -211,6 +211,7 @@ main {
     color: var(--muted);
     font-size: var(--font-size-body-large);
     line-height: 1.8;
+    text-align: justify;
 }
 
 .section {
@@ -296,6 +297,7 @@ article h3 {
 .contact-card>p {
     color: var(--muted);
     margin: 0;
+    text-align: justify;
 }
 
 .contact-link {
