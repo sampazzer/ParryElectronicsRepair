@@ -285,6 +285,7 @@ article h3 {
     color: var(--muted);
     display: grid;
     gap: 0.35rem;
+    list-style-position: inside;
 }
 
 .service-list li::marker {
